@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="themtify-iconss/themify-icons.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="assests/css/responsive.css">
     <title>The-Band</title>
 </head>
 <body>
     <div class="full">
         <!-- là thẻ to nhất chứa tất cả -->
-        <div class="header">
+        <div id="header" class="header">
             <!-- bắt đầu phần tạo menu -->
             <ul class="nav">
                 <li><a href="#">HOME</a></li>
@@ -18,7 +19,7 @@
                 <li><a href="#tour">TOUR</a></li>
                 <li><a href="#contact">CONTACT</a></li>
                 <li>
-                    <a href="">MORE
+                    <a href="#">MORE
                          <i class="icon ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
@@ -29,12 +30,19 @@
                 </li>
             </ul>
             <!-- kết thúc phần tạo menu -->
+
             <!-- bắt đầu phần tạo tìm kiếm -->
             <div class="search">
                 <i class="icons ti-search"></i>
             </div>
             <!-- kết thúc phần tạo tìm kiếm -->
 
+            <!-- bắt đầu phần tạo menu cho mobile -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="ti-menu"></i>
+            </div>
+            <!-- kết thúc phần tạo menu cho mobile -->
+            
         </div>
 
         <div class="slide">
@@ -59,19 +67,19 @@
                 <!-- phần hình ảnh member -->
                 <div class="row member-list">
                     <!-- member 1 -->
-                    <div class="col col-three text-center">
+                    <div class="member-item col col-three text-center">
                         <p class="member-name">Name</p>
-                        <img src="img/band/member1.jpg" alt="Member 1" class="member-img">
+                        <img src="./assests/img/band/member1.jpg" alt="Member 1" class="member-img">
                     </div>
                     <!-- member 2 -->
-                    <div class="col col-three text-center">
+                    <div class="member-item col col-three text-center">
                         <p class="member-name">Name</p>
-                        <img src="./img/band/member1.jpg" alt="Member 2" class="member-img">
+                        <img src="./assests/img/band/member1.jpg" alt="Member 2" class="member-img">
                     </div>
                     <!-- member 3 -->
-                    <div class="col col-three text-center">
+                    <div class="member-item col col-three text-center">
                         <p class="member-name">Name</p>
-                        <img src="./img/band/member1.jpg" alt="Member 3" class="member-img">
+                        <img src="./assests/img/band/member1.jpg" alt="Member 3" class="member-img">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -93,36 +101,36 @@
                     <!-- bắt đầu phần city -->
                     <div class="row city-list">
                         <!-- city 1 -->
-                        <div class="col col-three">
-                            <img src="./img/city/city1.jpg" alt="New York" class="city-img">
+                        <div class="col col-three mobile-col-full mt-16">
+                            <img src="./assests/img/city/city1.jpg" alt="New York" class="city-img">
                             <div class="city-body">
                                 <h3 class="city-name">New York</h3>
                                 <p class="city-date">Fri 27 Nov 2016</p>
                                 <p class="city-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="city-button js-buy-ticket">Buy Tickets</button>
+                                <button class="city-button js-buy-ticket mobile-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         <!-- city 2 -->
-                        <div class="col col-three">
-                            <img src="./img/city/city2.jpg" alt="Paris" class="city-img">
+                        <div class="col col-three mobile-col-full mt-16">
+                            <img src="./assests/img/city/city2.jpg" alt="Paris" class="city-img">
                             <div class="city-body">
                                 <h3 class="city-name">Paris</h3>
                                 <p class="city-date">Sat 28 Nov 2016</p>
                                 <p class="city-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="city-button js-buy-ticket">Buy Tickets</button>
+                                <button class="city-button js-buy-ticket mobile-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         <!-- city 3 -->
-                        <div class="col col-three">
-                            <img src="./img/city/city3.jpg" alt="San Francisco" class="city-img">
+                        <div class="col col-three mobile-col-full mt-16">
+                            <img src="./assests/img/city/city3.jpg" alt="San Francisco" class="city-img">
                             <div class="city-body">
-                                <h3 class="city-name">San Francisco</h3>
+                                <h3 class="city-name">Francisco</h3>
                                 <p class="city-date">Sun 29 Nov 2016</p>
                                 <p class="city-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="city-button js-buy-ticket">Buy Tickets</button>
+                                <button class="city-button js-buy-ticket mobile-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -137,7 +145,7 @@
                 <p class="section-slogan">Fan? Drop a note!</p>
                 <div class="row contact-content">
                     <!-- thông tin liên hệ -->
-                    <div class="col col-half contact-infor">
+                    <div class="col col-half mobile-col-full contact-infor">
                         <p><i class="ti-location-pin contact-icon"></i>Viet Nam</p>
                         <p><i class="ti-mobile contact-icon"></i>Phone: +84 xxxxxxxxx</p>
                         <p><i class="ti-email contact-icon"></i>Email: vupro0211@gmail.com</p>
@@ -145,14 +153,14 @@
                     <!-- kết thúc phần thông tin liên hệ -->
 
                     <!-- form liên hệ -->
-                    <div class="col col-half contact-form">
+                    <div class="col col-half mobile-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half contact-me">
+                                <div class="col col-half mobile-col-full contact-me">
                                     <input type="text" name="" class="contact-input" placeholder="Name" required>
                                 </div>
                                 
-                                <div class="col col-half contact-me">
+                                <div class="col col-half mobile-col-full contact-me">
                                     <input type="email" name="" class="contact-input" placeholder="Email" required>
                                 </div>
 
@@ -163,7 +171,7 @@
                                     <input type="text" name="" class="contact-input" placeholder="Message" required>
                                 </div>
                             </div>
-                            <button class="contact-button">send</button>
+                            <button class="contact-button mobile-full-width">send</button>
                         </form>
                     </div>
                     <!-- kết thúc phần form liên hệ -->
@@ -172,7 +180,7 @@
             <!-- kết thúc phần contact section  -->
         </div>
         <div class="map-section">
-            <img src="./img/map.jpg" alt="map">
+            <img src="./assests/img/map.jpg" alt="map">
         </div>
 
         <div class="end">
@@ -224,6 +232,7 @@
         </div>
     </div>
     <script>
+        //đóng mở mua bán vé
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.js-modal')
         const modalContainer = document.querySelector('.js-modal-container')
@@ -245,6 +254,48 @@
         modalContainer.addEventListener('click', function(event){
             event.stopPropagation()
         })
+        //kết thúc mua bán vé
+
+        // bắt đầu đóng mở mobile menu 
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            // so sánh header.clientHeight có bằng 46 hay không sau đó gán cho isClosed
+            // '===' dùng để so sánh trong js 
+            // '=' dùng để gán giá trị từ phải sang trái
+            if(isClosed){
+                header.style.height = 'auto';
+            }
+            else{
+                header.style.height = null;
+            }
+        }
+        // kết thúc đóng mở mobile menu 
+
+        //bắt đầu tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('.nav li a[href *= "#"]');
+
+        for(var i = 0; i <menuItems.length; i++){
+            var menuItem = menuItems[i];
+            
+            
+            menuItem.onclick = function(){
+                // nextElementSibling dùng để kiểm tra anh em liền kề của nó
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav'); 
+                //nếu không phải parent menu thì đóng menu lại
+                if(isParentMenu){
+                    event.preventDefault();
+                    // khi bấm vào mặc định là event
+                    //preventDefault để bỏ qua cái mặc định đó
+                }else{
+                    header.style.height = null;
+                }
+            }
+        }
+        //kết thúc tự động đóng khi chọn menu
     </script>
 </body>
 </html>
