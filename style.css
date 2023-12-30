@@ -28,6 +28,9 @@ cần phải xác định:
     clear: both;
  }
 
+ .mt-16{
+    margin-top: 16px !important;
+ }
  /* HÀNG */
  .row{
     margin-left: -8px;
@@ -80,7 +83,7 @@ cần phải xác định:
 }
 
 .nav{
-    display: inline-block;
+    display: block;
 }
 .nav > li{
     display: inline-block;
@@ -140,16 +143,30 @@ cần phải xác định:
 .icon{
     font-size: 12px;
 }   
-
+.header .mobile-menu-btn,
 .header .search{
     float: right;
     padding: 0 21px;
+}
+
+.header .search,
+.header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header .mobile-menu-btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
 }
 .header .search:hover{
     background-color: red;
     cursor: pointer;
     /* thay đổi con trỏ chuột từ mũi tên thành bàn tay */
 }
+
+.header .mobile-menu-btn,
 .header .icons{
     color: white;
     font-size: 20px;
@@ -159,7 +176,7 @@ cần phải xác định:
     margin-top: 46px;
     padding-top: 50%;
     /* tức là 50% tỉ lệ chiều ngang của chính nó */
-    background-image: url('img/slider/slider1.jpg');
+    background-image: url('/web_theBand/assests/img/slider/slider1.jpg');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -198,10 +215,11 @@ cần phải xác định:
 
 .content .content-section{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     /* cho bên trái và phải đều là tự động -> căn giữa */
-    padding: 64px 0px;
+    padding: 64px 16px;
     margin-bottom: 48px;
 }
 /* css cho cả 2 thằng */
@@ -299,7 +317,7 @@ cần phải xác định:
 
 /* CITY */
 .content .city-list{
-    margin-top: 32px;
+    margin-top: 16px;
     /* margin: 0 -8px 48px; */
 }
 
@@ -521,5 +539,69 @@ button.buy-tickets:hover{
     to{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+
+/* CSS cho PC */
+@media(min-width: 1024px)
+{
+    .header .mobile-menu-btn{
+        display: none;
+    }
+}
+
+/* CSS cho Tablet */
+@media(min-width: 740px) and (max-width: 1023px)
+{
+    .header .mobile-menu-btn{
+        display: none;
+    }
+}
+
+/* CSS cho Mobile */
+@media(max-width: 739px)
+{
+    .mobile-full-width,
+    .mobile-col-full{
+        width: 100% !important;
+    }
+    .header{
+        overflow: hidden;
+    }
+    .nav > li {
+        display: block;
+    }
+    .nav > li:first-child{
+        display: inline-block;
+    }
+    .nav > li > a{
+        padding: 2px 24px;
+    }
+    .header .search {
+        float: right;
+        padding: 0 21px;
+        display: none;
+        /* ẩn nó đi */
+    }
+    .subnav {
+        position: initial;
+        background-color: #333;
+    }
+    .subnav a{
+        color: #fff;
+        padding: 6px 40px;
+        line-height: 38px;
+    }
+    .content .member-item{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .content .member-img {
+        width: 60%;
+    }
+    .contact-form{
+        margin-top: 16px;
     }
 }
